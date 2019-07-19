@@ -12,7 +12,7 @@ Enter file in which to save the key (/home/zongying/.ssh/id_rsa): /home/zongying
 Title->lizongying@msn.com
 Key->
 ~~~
-cat /home/zongying/.ssh/id_rsa_github_developing-on-windows10
+cat /home/zongying/.ssh/id_rsa_github_developing-on-windows10.pub
 ~~~
 Allow write access->yes
 ### 配置项目使用单独的key
