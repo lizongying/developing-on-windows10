@@ -40,11 +40,19 @@ Allow write access->yes
 vim ~/.ssh/config
 ~~~
 ```
-Host github.developing-on-windows10
+Host github.com.developing-on-windows10
         HostName github.com
         User git
         IdentityFile /home/zongying/.ssh/id_rsa_developing-on-windows10
 ```
+### 设置git
+~~~
+git config user.name lizongying
+git config user.email lizongying@msn.com
+git remote rm origin
+git remote add origin git@github.com.developing-on-windows10:lizongying/developing-on-windows10.git
+~~~
+
 ## 部署到服务器
 ### 配置服务器简单连接(注意更改服务器ip)
 ```
