@@ -48,4 +48,10 @@ vim  ~/.bash_profile
 ~~~
 alias rsync_developing-on-windows10='rsync -avz --progress --delete --exclude ".git" --exclude ".gitignore" --exclude ".idea" /mnt/c/IdeaProjects/developing-on-windows10 product:/app'
 ~~~
-
+### 重新开启终端的时候自动加载bash_profile
+~~~
+vim ~/.zshrc
+~~~
+~~~
+source ~/.bash_profile
+~~~
