@@ -61,3 +61,13 @@ vim ~/.zshrc
 ~~~
 source ~/.bash_profile
 ~~~
+## IntelliJ IDEA 免注册
+### 修改host
+~~~
+vim /mnt/c/Windows/System32/drivers/etc/hosts
+~~~
+~~~
+0.0.0.0 account.jetbrains.com
+0.0.0.0 www.jetbrains.com
+~~~
+### http://idea.lanyus.com/->获取注册码
