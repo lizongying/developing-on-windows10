@@ -1,6 +1,20 @@
 # developing-on-windows10
 win10上，为了便捷开发，一些配置和工具
 
+## windows10
+### 安装
+https://www.microsoft.com/zh-cn/software-download/windows10
+如果不能升级安装，可以下载iso文件硬盘安装
+windows10专业版安装密钥：VK7JG-NPHTM-C97JM-9MPGT-3V66T
+### cmd 激活
+~~~
+slmgr /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX
+slmgr /skms kms.xspace.in
+slmgr /ato
+~~~
+## 开启子系统
+设置->针对开发人员->开发人员模式->启用或关闭windows功能->适用于linux的windows子系统
+windows10商店->搜索->linux->ubuntu
 ### ubuntu 安装git zsh oh-my-zsh
 ~~~
 sudo apt-get install git
