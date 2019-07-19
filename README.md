@@ -1,6 +1,12 @@
 # developing-on-windows10
 win10上，为了便捷开发，一些配置和工具
 
+### ubuntu 安装git zsh oh-my-zsh
+~~~
+sudo apt-get install git
+sudo apt-get install zsh
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+~~~
 ## github 建立项目仓库
 ### 生成github-key
 ~~~
