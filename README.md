@@ -52,6 +52,7 @@ git config user.name lizongying
 git config user.email lizongying@msn.com
 git remote rm origin
 git remote add origin git@github.com.developing-on-windows10:lizongying/developing-on-windows10.git
+git branch --set-upstream-to=origin/master master
 ~~~
 
 ## 部署到服务器
