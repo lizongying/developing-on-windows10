@@ -43,10 +43,11 @@ vim ~/.ssh/config
 Host github.com.developing-on-windows10
         HostName github.com
         User git
-        IdentityFile /home/zongying/.ssh/id_rsa_developing-on-windows10
+        IdentityFile /home/zongying/.ssh/id_rsa_github_developing-on-windows10
 ```
 ### 设置git
 ~~~
+git clone https://github.com/lizongying/developing-on-windows10.git
 git config user.name lizongying
 git config user.email lizongying@msn.com
 git remote rm origin
