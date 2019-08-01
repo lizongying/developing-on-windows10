@@ -95,3 +95,10 @@ vim /mnt/c/Windows/System32/drivers/etc/hosts
 0.0.0.0 www.jetbrains.com
 ~~~
 ### http://idea.lanyus.com/->获取注册码
+
+## admin mongo
+~~~
+git clone https://github.com/mrvautin/adminMongo.git && cd adminMongo
+npm install
+npm start or node app
+~~~
