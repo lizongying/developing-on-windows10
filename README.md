@@ -54,6 +54,16 @@ git remote rm origin
 git remote add origin git@github.com.developing-on-windows10:lizongying/developing-on-windows10.git
 git branch --set-upstream-to=origin/master master
 ~~~
+如果本地已经有文件
+```
+git init
+git config user.name lizongying
+git config user.email lizongying@msn.com
+git add -A .
+git commit -m'init'
+git remote add origin git@github.com.developing-on-windows10:lizongying/developing-on-windows10.git
+git push --set-upstream origin master
+```
 
 ## 部署到服务器
 ### 配置服务器简单连接(注意更改服务器ip)
@@ -102,3 +112,49 @@ git clone https://github.com/mrvautin/adminMongo.git && cd adminMongo
 npm install
 npm start or node app
 ~~~
+~~~
+{
+    "app": {
+        "host": "127.0.0.1",
+        "port": 4321,
+        "password": "1234",
+        "locale": "en",
+        "context": "dbApp",
+        "monitoring": false
+    }
+}
+~~~
+
+## minio
+~~~
+wget https://dl.min.io/server/minio/release/linux-amd64/minio
+chmod +x minio
+./minio server /app/data
+server {
+    listen 80;
+    gzip on;
+    server_name ;
+    location / {
+      proxy_pass http://127.0.0.1:9000;
+      proxy_set_header   Host    $host;
+    }
+}
+~~~
+
+## 二级代理
+
+```
+sslocal -s  -p  -l  -k  -m aes-256-cfb -b 0.0.0.0
+```
+```
+stream {
+    upstream shadowsocks {
+        hash $remote_addr consistent;
+        server 127.0.0.1:1080;
+    }
+    server {
+        listen 2080;
+        proxy_pass shadowsocks;
+    }
+}
+```
